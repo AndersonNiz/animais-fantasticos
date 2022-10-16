@@ -1,4 +1,3 @@
-import initFuncionamento from "./funcionamento.js";
 import outsideClick from "./outside-click.js";
 
 export default class DropdownMenu {
@@ -9,6 +8,7 @@ export default class DropdownMenu {
     // define touchstart e click como argumentos padrão se o user nao definir
     if (events === undefined) this.events = ["touchstart", "click"];
     else this.events = events;
+
     this.activeDropdownMenu = this.activeDropdownMenu.bind(this);
   }
 
